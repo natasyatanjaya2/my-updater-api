@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 app.get('/versi.json', (req, res) => {
   res.json({
-    versi: "1.3",
+    versi: "1.4",
     url: "https://raw.githubusercontent.com/natasyatanjaya2/my-updater-api/main/public/ProgramToko.exe",
     files: [
       { path: "filetambahan.dll" },
@@ -15,4 +15,5 @@ app.get('/versi.json', (req, res) => {
 
 
 app.listen(PORT, () => console.log(`Server berjalan di http://localhost:${PORT}`));
+
 
