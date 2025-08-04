@@ -11,14 +11,15 @@ app.get('/versi.json', (req, res) => {
     versi: "1.4",
     url: "https://github.com/natasyatanjaya2/my-updater-api/raw/refs/heads/main/releases/latest/download/ProgramToko.exe",
     files: [
-      { path: `${baseUrl}/filetambahan.dll` },
-      { path: `${baseUrl}/filetambahan2.txt` }
+      { path: "filetambahan.dll" },
+      { path: "filetambahan2.txt" }
     ]
   });
 });
 
 // Jalankan server
 app.listen(PORT, () => console.log(`✅ Server berjalan di ${PORT}`));
+
 
 
 
