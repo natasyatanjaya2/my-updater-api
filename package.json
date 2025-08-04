@@ -1,0 +1,11 @@
+{
+  "name": "updater-api",
+  "version": "1.0.0",
+  "main": "versi.js",
+  "scripts": {
+    "start": "node versi.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
