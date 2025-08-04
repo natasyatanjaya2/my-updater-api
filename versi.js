@@ -12,7 +12,7 @@ app.get('/versi.json', (req, res) => {
 
   res.json({
     versi: "1.4",
-    url: "https://github.com/natasyatanjaya2/my-updater-api/releases/latest/download/ProgramToko.exe",
+    url: "https://github.com/natasyatanjaya2/my-updater-api/blob/main/releases/latest/download/ProgramToko.exe",
     files: [
       { path: `${baseUrl}/filetambahan.dll` },
       { path: `${baseUrl}/filetambahan2.txt` }
@@ -22,4 +22,5 @@ app.get('/versi.json', (req, res) => {
 
 // Jalankan server
 app.listen(PORT, () => console.log(`✅ Server berjalan di ${PORT}`));
+
 
