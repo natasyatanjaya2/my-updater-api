@@ -1,19 +1,24 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// 🔹 Folder tempat file update disimpan (public)
+app.use(express.static(path.join(__dirname, 'public')));
+
+// 🔹 Endpoint versi.json
 app.get('/versi.json', (req, res) => {
+  const baseUrl = `${req.protocol}://${req.get('host')}`; // URL otomatis Railway
+
   res.json({
     versi: "1.4",
-    url: "https://raw.githubusercontent.com/natasyatanjaya2/my-updater-api/main/public/ProgramToko.exe",
+    url: `${baseUrl}/ProgramToko.exe`,
     files: [
-      { path: "filetambahan.dll" },
-      { path: "filetambahan2.txt" }
+      { path: `${baseUrl}/filetambahan.dll` },
+      { path: `${baseUrl}/filetambahan2.txt` }
     ]
   });
 });
 
-
-app.listen(PORT, () => console.log(`Server berjalan di http://localhost:${PORT}`));
-
-
+// Jalankan server
+app.listen(PORT, () => console.log(`✅ Server berjalan di ${PORT}`));
