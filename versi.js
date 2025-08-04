@@ -7,11 +7,12 @@ app.get('/versi.json', (req, res) => {
     versi: "1.3",
     url: "https://raw.githubusercontent.com/natasyatanjaya2/my-updater-api/main/public/ProgramToko.exe",
     files: [
-      { path: "file_tambahan_1.dll" },
-      { path: "folder/subfolder/file_tambahan_2.txt" }
+      { path: "filetambahan.dll" },
+      { path: "filetambahan2.txt" }
     ]
   });
 });
 
 
 app.listen(PORT, () => console.log(`Server berjalan di http://localhost:${PORT}`));
+
