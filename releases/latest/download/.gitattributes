@@ -1,0 +1,12 @@
+# Track .exe files (seperti ProgramToko.exe)
+*.exe filter=lfs diff=lfs merge=lfs -text
+
+# Track ZIP files (installer, backup, dll)
+*.zip filter=lfs diff=lfs merge=lfs -text
+
+# Track SQL files (database dump)
+*.sql filter=lfs diff=lfs merge=lfs -text
+
+# Track image files (jika perlu)
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
