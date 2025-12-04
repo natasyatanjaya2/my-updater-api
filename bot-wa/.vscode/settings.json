@@ -1,0 +1,7 @@
+{
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript", // Aktifkan linting untuk JavaScript
+    "html"        // Aktifkan linting untuk file HTML
+  ]
+}
