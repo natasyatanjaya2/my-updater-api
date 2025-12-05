@@ -10,7 +10,7 @@ app.get('/versi.json', (req, res) => {
     url: "",
     files: [
       {
-        name: "bot-wa.zip",
+        nama: "bot-wa.zip",
         url: "https://github.com/natasyatanjaya2/my-updater-api/raw/refs/heads/main/bot-wa.zip",
         extractTo: "bot-wa" // folder tujuan setelah di-extract
       }
@@ -20,6 +20,7 @@ app.get('/versi.json', (req, res) => {
 
 // Jalankan server
 app.listen(PORT, () => console.log(`✅ Server berjalan di ${PORT}`));
+
 
 
 
