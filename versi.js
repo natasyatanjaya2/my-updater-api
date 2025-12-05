@@ -6,15 +6,9 @@ const PORT = process.env.PORT || 3000;
 // 🔹 Endpoint versi.json
 app.get('/versi.json', (req, res) => {
   res.json({
-    versi: "1.0",
-    url: "",
-    files: [
-      {
-        nama: "bot-wa.zip",
-        url: "https://github.com/natasyatanjaya2/my-updater-api/raw/refs/heads/main/bot-wa.zip",
-        extractTo: "bot-wa" // folder tujuan setelah di-extract
-      }
-    ]
+    versi: "1.1",
+    url: "https://github.com/natasyatanjaya2/my-updater-api/raw/refs/heads/main/releases/latest/download/ProgramToko.exe",
+    files: []
   });
 });
 
