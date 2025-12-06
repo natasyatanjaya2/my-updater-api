@@ -16,6 +16,11 @@ app.get('/versi.json', (req, res) => {
       { 
         nama: "filetambahan2.txt", 
         url: "https://raw.githubusercontent.com/natasyatanjaya2/my-updater-api/main/filetambahan2.txt" 
+      },
+      {
+        "nama": "bot-wa.zip",
+        "url": "https://github.com/natasyatanjaya2/my-updater-api/raw/refs/heads/main/bot-wa.zip",
+        "extractTo": "bot-wa"
       }
     ]
   });
