@@ -8,12 +8,19 @@ app.get('/versi.json', (req, res) => {
   res.json({
     versi: "1.3",
     url: "https://github.com/natasyatanjaya2/my-updater-api/raw/refs/heads/main/releases/latest/download/ProgramToko.exe",
-    files: []
+    files: [
+      {
+        "nama": "bot-wa.zip",
+        "url": "https://github.com/natasyatanjaya2/my-updater-api/raw/refs/heads/main/bot-wa.zip",
+        "extractTo": "bot-wa"
+      }
+    ]
   });
 });
 
 // Jalankan server
 app.listen(PORT, () => console.log(`✅ Server berjalan di ${PORT}`));
+
 
 
 
